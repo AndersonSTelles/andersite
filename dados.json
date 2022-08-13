@@ -1,0 +1,50 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "titulo": "Programador Java"
+    },
+    {
+      "id": 2,
+      "titulo": "Dev. Front-End"
+    },
+    {
+      "id": 3,
+      "titulo": "Analista de Dados"
+    },
+    {
+      "id": 4,
+      "titulo": "Dev. Back-End"
+    },
+    {
+      "id": 5,
+      "titulo": "Analista de Rede"
+    }
+  ],
+  "candidatos": [
+    {
+      "nome": "Anderson Telles",
+      "data": "1995-03-28",
+      "telefone": "11970206280",
+      "email": "andersonsecario@gmail.com",
+      "vaga": "Analista de Dados",
+      "id": 1
+    },
+    {
+      "nome": "Fernanda",
+      "data": "1989-03-06",
+      "telefone": "22334455",
+      "email": "fernanda@gmail.com",
+      "vaga": "Dev. Front-End",
+      "id": 2
+    },
+    {
+      "nome": "Abner Telles",
+      "data": "2003-03-28",
+      "telefone": "11 912345678",
+      "email": "abner@gmail.com",
+      "vaga": "Dev. Back-End",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+.menu
+    {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    overflow: hidden;
+    }
+
+.menu a { 
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    orientation: initial;
+        }
+
+.menu a:hover, .menu a:focus {background-color: white; color: blue;}
+
+/* Deixando os itens da lista "flutuados" à esquerda (na prática, deixa os itens lado a lado)*/
+.menu li {float: left;} /* usando float sempre tem efeito colateral em algum lugar do programa (pode ser perceptível ou não) */
+
+/* Escondendo o item que tem o ícone do menu */
+.menu li.icone{display:none;}
+
+/* Exercício (Design Responsivo do Menu) 
+1) Crie uma media query para telas
+de no máximo 760px de largura. 
+
+2) Dentro desta regra, faça as seguintes alterações
+- Itens do menu: desative o float
+- Links do menu: alinhe o texto no meio */
+
+@media screen and (max-width: 760px)
+    {
+    /* Escondemos os itens do menu */
+    .menu li {display:none;}
+    
+    /* Mostrando novamente ícone do menu */
+    .menu li.icone
+    {
+        display: block;
+        float: right;
+    }
+/* Regra "fechada", muito específica
+    Somente se a lista estiver com as duas classes
+    JUNTAS [menu e aberto, é que as configurações
+    de float e display entrarão */
+    .menu.aberto li
+    {
+    float:none;
+    display: inline;
+    }
+
+/* Apenas se as duas classes estiverem JUNTAS,
+    posicionamos o icone/menu acima e à direita
+    em relação à lista */
+    .menu.aberto li.icone 
+    {
+        position: absolute;
+        right: 0; top:0;
+    }
+    /* Quando o menu estiver aberto, ele
+    passará a ser a referência de posicionamento
+    do ícone/menu */
+    .menu.aberto { position: relative; }
+
+    }
